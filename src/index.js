@@ -19,7 +19,7 @@ root.render(
        <Route path="/lista" element={<Lista/>}></Route>
        <Route path="/historial" element={<Historial/>}></Route>
        <Route path="/combate" element={<Combate/>}></Route>
-       </Route> 
+      </Route>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
