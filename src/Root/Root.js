@@ -7,10 +7,10 @@ const Root = (props) => {
 
         <nav>
 
-         <a><Link to="/pokemon">Pokemon</Link></a>
-         <a><Link to="/lista">Lista</Link></a>
-         <a><Link to="/historial">Historial</Link></a>
-         <a><Link to="/combate">Combate</Link></a>
+         <Link to="/pokemon">Pokemon</Link>
+         <Link to="/lista">Lista</Link>
+         <Link to="/historial">Historial</Link>
+         <Link to="/combate">Combate</Link>
          <span> Buscar Pokemon:<input type="search"></input> </span>
 
 

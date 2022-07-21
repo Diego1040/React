@@ -1,16 +1,32 @@
-import React  from "react";
+import React ,{ useEffect, useState} from "react";
 
 
-class Lista extends React.Component{
-    
-    render(){
+const Lista = (props) => {
+
+    const [pokemon, setPokemons]= useState([])
+    const [titulo, setTitulo] = useState("bfjbfjabf")
+
+
+    useEffect(() => {
+        fetch("https://pokeapi.co/api/v2/pokemon/")
+        .then(res => res.json())
+        .then(
+            (data) => {
+                console.log(data)
+                setPokemons(data.results)
+            }
+        )
+    }, [])
         return (
             <>
 
-            jsfsdfsbjfsdbf
+            {titulo}
+
+            {pokemon.map((pokemon) => {
+                return(<div>{pokemon.name}</div>)
+            })}
             </>
         )
-    }
 
 }
 
