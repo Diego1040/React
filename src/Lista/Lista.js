@@ -8,7 +8,7 @@ const Lista = (props) => {
 
 
     useEffect(() => {
-        fetch("https://pokeapi.co/api/v2/pokemon/")
+        fetch("https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0")
         .then(res => res.json())
         .then(
             (data) => {
@@ -22,8 +22,8 @@ const Lista = (props) => {
 
             {titulo}
 
-            {pokemon.map((pokemon) => {
-                return(<div>{pokemon.name}</div>)
+            {pokemon.map((pokemon, key) => {
+                return(<div key={key}>{pokemon.name}</div>)
             })}
             </>
         )

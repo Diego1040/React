@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter , Route, Routes} from "react-router-dom";
+import { BrowserRouter , Route, Routes,} from "react-router-dom";
 import Root from "./Root/Root.js"
 import Pokemon from './Pokemon/Pokemon.js';
 import Combate from "./Combate/Combate.js";
 import Lista from "./Lista/Lista.js";
 import Historial from "./Historial/Historial.js"
+import Search from "./Search/search.js"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +21,7 @@ root.render(
        <Route path="/lista" element={<Lista/>}></Route>
        <Route path="/historial" element={<Historial/>}></Route>
        <Route path="/combate" element={<Combate/>}></Route>
+       <Route path="/search" element={<Search/>}></Route>
       </Route>
     </Routes>
     </BrowserRouter>
