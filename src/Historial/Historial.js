@@ -1,16 +1,17 @@
-import React  from "react";
+import React ,{ useEffect, useState} from "react";
 
 
-class Historial extends React.Component{
 
-    render(){
-        return (
-            <>
-            sfsfsdf
-            </>
-        )
-    }
+const Historial = (props) =>{
 
+    const [historial, setHistorial] = useState()
+    
+    return(
+        <>
+        
+        </>
+    )
 }
+
 
 export default Historial

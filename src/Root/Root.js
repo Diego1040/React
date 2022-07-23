@@ -6,12 +6,11 @@ const Root = (props) => {
         <>
 
         <nav>
-
-         <Link to="/pokemon">Pokemon</Link>
-         <Link to="/lista">Lista</Link>
-         <Link to="/historial">Historial</Link>
-         <Link to="/combate">Combate</Link>
-         <Link to="/search"> Buscar Pokemon</Link>
+            
+         <li><Link to="/lista">Lista</Link></li>
+         <li><Link to="/historial">Historial</Link></li>
+         <li><Link to="/combate">Combate</Link></li>
+         <li><Link to="/search">Buscar Pokemon</Link></li>
 
 
         <Outlet/>

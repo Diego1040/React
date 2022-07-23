@@ -1,13 +1,25 @@
+import React ,{ useEffect, useState} from "react";
+
+
 const Search = (props) => {
+
+    const [search, setSearch] = useState()
+
+    const onClick = (event) =>{
+        console.log("Se pulso aqui")
+        
+    }
+
     return(
         <>
         
-        <span> Buscar Pokemon:<input type="search"></input> </span>
-        
-        
+        <div> Buscar Pokemon: <input placeholder="Buscar Pokemon"></input> </div>
+        <button onClick={onClick}>Enviar</button>
+
         
         </>
     )
 }
+
 
 export default Search

@@ -1,16 +1,17 @@
-import React  from "react";
+import React ,{ useEffect, useState} from "react";
 
 
-class Combate extends React.Component{
-    
-    render(){
-        return (
-            <>
-            djgndg
-            </>
-        )
-    }
+const Combate = (props) =>{
 
+    const [combate, setHistorial] = useState()
+
+
+    return(
+        <>
+        
+        </>
+    )
 }
+
 
 export default Combate
