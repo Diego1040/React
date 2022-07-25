@@ -1,12 +1,14 @@
 import React ,{ useEffect, useState} from "react";
 
 
+
 const Search = (props) => {
+
 
     const [search, setSearch] = useState()
 
     const onClick = (event) =>{
-        console.log("Se pulso aqui")
+        console.log()
         
     }
 

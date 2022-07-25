@@ -17,12 +17,15 @@ const Pokemon = (props) => {
     return(
         <>
         
-        {pokemon.map((pokemon, key) => {
+
+
+        {/*{pokemon.map((pokemon, key) => {
                 return(<div key={key}>{pokemon.name}</div>)
-            })}
+            })}  */} 
         
         </>
     )
 }
+
 
 export default Pokemon

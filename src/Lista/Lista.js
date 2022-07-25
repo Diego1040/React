@@ -12,6 +12,9 @@ const Lista = (props) => {
             (data) => {
                 console.log(data)
                 setPokemons(data.results)
+                
+                
+                
             }
         )
     }, [])
@@ -19,8 +22,10 @@ const Lista = (props) => {
             <>
 
             {pokemon.map((pokemon, key) => {
-                return(<div key={key}>{pokemon.name}</div>)
+                return(<div key={key}>{pokemon.name} {pokemon.weigth}</div>)
             })}
+
+            
 
             
             </>
