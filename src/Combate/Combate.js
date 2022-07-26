@@ -3,7 +3,9 @@ import React ,{ useEffect, useState} from "react";
 
 const Combate = (props) =>{
 
-    const [combate, setHistorial] = useState([])
+    const [pokemon1, setCombate1] = useState([])
+
+    
 
     useEffect(() =>{
         fetch("https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0")
@@ -11,7 +13,7 @@ const Combate = (props) =>{
         .then(
             (data) => {
                 console.log(data)
-                setHistorial(data.results)
+                setCombate1(data.results)
                 
             })
     }, [])
@@ -20,8 +22,8 @@ const Combate = (props) =>{
     return(
         <>
 
-        {combate.map((pokemon, key) =>{
-            return(<div key={key}>{pokemon.url}</div>)
+        {pokemon1.map((pokemon1, key) =>{
+            return(<div key={key}>{pokemon1.url}</div>)
         })}
         
         </>

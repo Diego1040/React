@@ -1,28 +1,37 @@
 import React, { useEffect, useState}  from "react";
 
 
+
 const Pokemon = (props) => {
 
-    const [pokemon, setPokemon] = useState([])
+    const [pokemon, setPokemon] = useState({})
 
     useEffect(() => {
-        fetch("https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0")
+        fetch("https://pokeapi.co/api/v2/pokemon/ditto")
         .then(res => res.json())
         .then((data) =>{
                 console.log(data)
-                setPokemon(data.results)
+                setPokemon(data)
         })
     }, [])
     
     return(
         <>
-        
 
-
-        {/*{pokemon.map((pokemon, key) => {
-                return(<div key={key}>{pokemon.name}</div>)
-            })}  */} 
+    <div className="card-container">
+        <div className="img-pokemon">
+    
+               <img src={pokemon.sprites?.front_default}></img>
+               
+        </div>
         
+        {pokemon.name}
+
+        {pokemon.abilities?.map((pokemon, key) => {
+            return ( <div key={key}>{pokemon.ability.name}</div>)
+        })}
+      
+    </div> 
         </>
     )
 }

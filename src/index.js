@@ -7,6 +7,7 @@ import Combate from "./Combate/Combate.js";
 import Lista from "./Lista/Lista.js";
 import Historial from "./Historial/Historial.js"
 import Search from "./Search/search.js"
+import Pokemon from './Pokemon/Pokemon';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,7 @@ root.render(
        <Route path="/historial" element={<Historial/>}></Route>
        <Route path="/combate" element={<Combate/>}></Route>
        <Route path="/search" element={<Search/>}></Route>
+       <Route path="/pokemon" element={<Pokemon/>}></Route>
 
     </Routes>
     </BrowserRouter>

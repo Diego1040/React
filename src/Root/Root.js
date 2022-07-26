@@ -11,6 +11,7 @@ const Root = (props) => {
          <li><Link to="/historial">Historial</Link></li>
          <li><Link to="/combate">Combate</Link></li>
          <li><Link to="/search">Buscar Pokemon</Link></li>
+         <li><Link to="/pokemon">Pokemon</Link></li>
 
 
         <Outlet/>

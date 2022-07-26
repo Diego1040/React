@@ -1,4 +1,5 @@
 import React ,{ useEffect, useState} from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -8,7 +9,7 @@ const Search = (props) => {
     const [search, setSearch] = useState()
 
     const onClick = (event) =>{
-        console.log()
+        <Link to="/pokemon"></Link>
         
     }
 

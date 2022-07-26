@@ -16,7 +16,6 @@ const Lista = (props) => {
                 setPokemons(data.results)
                 
                 
-                
             }
         )
     }, [])
