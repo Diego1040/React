@@ -7,6 +7,8 @@ const Lista = (props) => {
 
     const [pokemon, setPokemons]= useState([])
 
+    
+
     useEffect(() => {
         fetch("https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0")
         .then(res => res.json())
@@ -28,27 +30,10 @@ const Lista = (props) => {
 
                 <div className="card-pokemon">
                  {pokemon.map((pokemon, key) => {
-                 return(<div key={key}>{pokemon.name}</div>)
+                 return(<div key={key}> <li> -{pokemon.name}</li></div>)
                 })}
                 </div>
-
-                <div className="img-pokemon">
-                 {pokemon.map((pokemon, key) => {
-                 return(<div key={key}>{pokemon.sprites /**.front_default */}</div>)
-                 })}
-                </div>
-
-                <div className="card-weigth">
-                 {pokemon.map((pokemon, key) => {
-                 return(<div key={key}>{pokemon.weigth}</div>)
-                })}
-                </div>
-
-                <div className="card-ability">
-                {pokemon.map((pokemon, key) =>{
-                    return(<div key={key}>{pokemon.ability}</div>)
-                })}
-                </div>
+            -
 
             </div> 
             

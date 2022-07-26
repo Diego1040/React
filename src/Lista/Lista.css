@@ -4,11 +4,9 @@ font-family: monospace;
 ;
 ;}
 
-.card-pokemon{color: "";}
+.card-pokemon{font-size:large;
+    margin: 10px;
+
+}
 
 
-.img-pokemon{display: "";}
-
-.card-weigth{display: "";}
-
-.card-ability{display: "";}
