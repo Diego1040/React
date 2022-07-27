@@ -7,6 +7,7 @@ const Lista = (props) => {
 
     const [pokemon, setPokemons]= useState([])
 
+    const [pokemonImg, setPokemonImg] = useState([])
     
 
     useEffect(() => {
@@ -16,8 +17,7 @@ const Lista = (props) => {
             (data) => {
                 console.log(data)
                 setPokemons(data.results)
-                
-                
+                     
             }
         )
     }, [])
@@ -26,11 +26,13 @@ const Lista = (props) => {
 
             {/** Aca solo me deja mostrar resultados de name y tambien de las url pero no puedo acceder mas alla de los results */}
 
+            <h1><strong>Pokedex</strong></h1>
+
             <div className="card-container">
 
                 <div className="card-pokemon">
                  {pokemon.map((pokemon, key) => {
-                 return(<div key={key}> <li> -{pokemon.name}</li></div>)
+                 return(<div key={key}> #{key+1} <li> -{pokemon.name} </li></div>)
                 })}
                 </div>
             -
