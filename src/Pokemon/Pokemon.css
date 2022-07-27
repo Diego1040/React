@@ -1,9 +1,9 @@
 
 
 
-.card-container{color: black;}
+.card-container{color: black; ;}
 
-.name-pokemon{font-size: large; font-family:Arial, Helvetica, sans-serif;}
+.name-pokemon{font-size: large; font-family:Arial, Helvetica, sans-serif; background-color:"";}
 
 .card-weigth{display: flex; padding: 1em;}
 
@@ -11,6 +11,6 @@
 
 .card-experience{display: flex; padding: 1em;}
 
-.card-default{box-shadow: 4px 4px 4px rgb(36, 35, 35); border-radius: 14px;}
+.card-default{box-shadow: 4px 4px 4px rgb(36, 35, 35); border-radius: 14px; font-size: large; }
 
-.card-forms{box-shadow: 4px 4px 4px 4px rgb(36, 35, 35); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+.card-forms{box-shadow: 4px 4px 4px 4px rgb(36, 35, 35); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: red;}

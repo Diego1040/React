@@ -6,6 +6,7 @@ font-family: monospace;
 
 .card-pokemon{font-size:large;
     margin: 10px;
+    box-shadow: 4px 4px 4px 5px rgb(36, 35, 35)
 
 }
 
